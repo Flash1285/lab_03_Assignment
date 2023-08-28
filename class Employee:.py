@@ -1,16 +1,16 @@
 class Employee:
-    def _init_(self, emp_id, name, age, salary):
+    def __init__(self, emp_id, name, age, salary):
         self.emp_id = emp_id
         self.name = name
         self.age = age
         self.salary = salary
 
-    def _str_(self):
+    def __str__(self):
         return f"{self.emp_id} {self.name} {self.age} {self.salary}"
 
 
 class EmployeeDatabase:
-    def _init_(self, employees):
+    def __init__(self, employees):
         self.employees = employees
 
     def sort_by_age(self):
@@ -27,7 +27,7 @@ class EmployeeDatabase:
             print(emp)
 
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     employees = [
         Employee("161E90", "Raman", 41, 56000),
         Employee("161F91", "Himadri", 38, 67500),
@@ -38,6 +38,8 @@ if __name__ == "_main_":
 
     emp_database = EmployeeDatabase(employees)
 
+    print("Madhav Garg")
+    print("E22CSEU0602")
     print("Choose sorting parameter:")
     print("1. Age\n2. Name\n3. Salary")
     choice = int(input())

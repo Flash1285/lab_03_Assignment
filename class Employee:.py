@@ -38,7 +38,7 @@ if __name__ == "__main__":
 
     emp_database = EmployeeDatabase(employees)
 
-    print("Madhav Garg")
+    print("Madhav ")
     print("E22CSEU0602")
     print("Choose sorting parameter:")
     print("1. Age\n2. Name\n3. Salary")
